@@ -1,5 +1,5 @@
 #
-set :user, "deploy"
+set :user, "fpcnorthshore"
 set :use_sudo, false
 set :deploy_via, :remote_cache
 set :copy_exclude, [".git", ".gitmodules", ".DS_Store", ".gitignore"]
