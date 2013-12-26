@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'CallunaRegular';
+    src: url('../font/Calluna-Regular-webfont.eot');
+    src: url('../font/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Calluna-Regular-webfont.woff') format('woff'),
+         url('../font/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('../font/Calluna-Regular-webfont.svg#CallunaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'QuicksandLight'; 
+	src: url('../font/Quicksand_Book.otf');
+}

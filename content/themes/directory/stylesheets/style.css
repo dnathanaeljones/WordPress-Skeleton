@@ -1,0 +1,451 @@
+body {
+  font-family: 'CallunaRegular';
+}
+h3 {
+  font-size: 2.6em;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 3em;
+  line-height: 1.2em;
+}
+h4 {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+em {
+  text-decoration: underline;
+}
+a {
+  color: #1166CC;
+  font-family: arial, sans-serif;
+  font-size: .9em;
+}
+a:hover {
+  text-decoration: underline;
+}
+.active a {
+  font-weight: bold;
+}
+p {
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+a.more {
+  border: 1px solid #1166CC;
+  font-size: 0.63em;
+  margin-left: 7px;
+  padding: 2px 3px 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+a.more:hover {
+  background: #1166CC;
+  color: #fff;
+  text-decoration: none;
+}
+#container {
+  border: 1px solid #BBBBBB;
+  margin: 10px auto;
+  padding: 5px 20px 20px;
+  max-width: 800px;
+  width: 80%;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+#header {
+  border-bottom-style: double;
+  margin-bottom: 5px;
+  padding-bottom: 12px;
+  position: relative;
+}
+#header img {
+  width: 284px;
+}
+#header h1 {
+  font-size: 13px;
+  font-style: italic;
+  color: #666;
+  margin-left: 70px;
+}
+#header #search {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#header #search input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #bbb;
+  padding: 2px 4px;
+  padding-left: 23px;
+  color: #777;
+  font-weight: light;
+}
+#header #search i {
+  color: #555;
+  position: absolute;
+  right: 196px;
+  top: 4px;
+}
+#navigation {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+}
+#navigation a {
+  color: #333 !important;
+  font-family: "CallunaRegular";
+  font-size: .9em;
+  text-transform: uppercase;
+}
+#navigation ul {
+  display: table;
+  margin: 0 auto;
+}
+#navigation li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.content {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.content img {
+  padding: 15px 20px;
+}
+.opportunity, .opportunity-descriptions {
+  width: 380px;
+  float: left;
+}
+.opportunity div, .opportunity-descriptions div {
+  width: 320px;
+}
+.opportunity div {
+  margin-bottom: 25px;
+}
+.opportunity div a {
+  display: block;
+}
+.opportunity-descriptions ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+.home-top {
+  position: relative;
+}
+.home-top img {
+  position: relative;
+  display: block;
+}
+.home-top img#grow-small {
+  display: none;
+}
+.home-top #words {
+  position: absolute;
+  right: 210px;
+  top: 20px;
+  color: #333;
+}
+.home-top #words .grow {
+  color: green;
+}
+.home p {
+  font-size: 1.1em;
+  font-style: normal;
+}
+.home-mid {
+  margin-top: 20px;
+}
+.home-mid span {
+  color: green;
+}
+.categories a {
+  display: block;
+  font-family: "CallunaRegular";
+  font-size: 1.1em;
+}
+.categories h3 {
+  margin-bottom: 7px;
+  margin-top: 10px;
+  border-bottom: 1px solid #888888;
+  font-size: 2.2em;
+}
+.search h3 {
+  margin-bottom: 0px;
+}
+.search h3 i {
+  font-size: .5em;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.search p {
+  margin-left: 0;
+}
+.search .tags a {
+  color: #999;
+}
+.panel:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 30px;
+}
+.panel {
+  margin: 50px 25px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+.panel p {
+  line-height: 1.3em;
+  text-align: justify;
+}
+.panel .green {
+  color: green;
+}
+.mission-intro {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 470px;
+}
+.mission-intro img {
+  position: absolute;
+  left: -20px;
+  top: -25px;
+  z-index: 1;
+  opacity: .8;
+}
+.mission-intro h3 {
+  font-size: 5em;
+  line-height: 0.7em;
+  margin-top: 17px;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+}
+.mission-intro .here {
+  font-size: .65em;
+}
+.mission-intro .green {
+  font-size: 1.2em;
+}
+.mission-content {
+  position: relative;
+  z-index: 11;
+  margin-left: 15px;
+  width: 8	0%;
+  font-size: 1.1em;
+}
+.mission-content p {
+  margin-left: 0;
+}
+.faith-love {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 0;
+}
+.faith-love img {
+  position: absolute;
+  top: -50px;
+  right: -24px;
+}
+.faith-love h2 {
+  margin-bottom: 20px;
+}
+.faith-love .lifestyle {
+  position: relative;
+  z-index: 10;
+  width: 270px;
+}
+.faith-love .lifestyle span {
+  color: green;
+}
+.faith-love .lifestyle p {
+  color: #333;
+}
+.partnerships {
+  margin-top: 0;
+}
+.partnerships .partner-intro {
+  display: table;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.partnerships .partner-icons, .partnerships h3 {
+  display: inline-block;
+}
+.partnerships .partner-icons .icon-cogs, .partnerships h3 .icon-cogs {
+  font-size: 5.5em;
+}
+.partnerships .partner-icons i {
+  color: #222;
+  font-size: 7em;
+}
+.partnerships h3 {
+  vertical-align: top;
+  margin: 30px 10px 0 0;
+  font-size: 3.5em;
+}
+.partnerships p {
+  font-size: 1.1em;
+}
+.partnerships dd, .partnerships dt {
+  font-size: 1.1em;
+  font-style: normal;
+  float: left;
+  font-size: 1em;
+  padding: 6px 12px;
+}
+.partnerships dt {
+  width: 200px;
+}
+.partnerships dt i {
+  margin-right: 5px;
+}
+.partnerships dd {
+  font-style: italic;
+  width: 400px;
+}
+.partnerships .gospel-partner {
+  margin-top: 35px;
+  background: #eee;
+}
+.partnerships .purpose-partner {
+  margin-bottom: 35px;
+}
+.live-local {
+  height: 340px;
+}
+.live-local img {
+  position: absolute;
+  z-index: 1;
+}
+.live-local .live-local-highlight {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  width: 430px;
+}
+.live-local .live-local-highlight h3 {
+  font-size: 3em;
+}
+@media (max-width: 950px) {
+  img#grow {
+    display: none;
+  }
+  img#grow-small {
+    display: block !important;
+  }
+  .partnerships h3 {
+    font-size: 3em;
+    margin-top: 2px;
+    margin-left: 18px;
+  }
+  .partnerships .partner-intro .icon-play-circle {
+    font-size: 4em;
+  }
+  .partnerships .partner-intro .icon-cogs {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 900px) {
+  .faith-love img {
+    height: 176px;
+    width: 158px;
+  }
+  .faith-love .lifestyle {
+    width: auto;
+  }
+  .live-local img {
+    opacity: .4;
+    right: -32px;
+  }
+  .live-local .live-local-highlight {
+    position: relative;
+  }
+}
+@media (max-width: 800px) {
+  #navigation ul {
+    display: block;
+  }
+  #navigation li {
+    display: block;
+    padding: 3px 0 2px 4px;
+    border-bottom: 1px solid #ccc;
+    margin-right: 0px;
+  }
+  #navigation li:last-child {
+    border: none;
+  }
+  #navigation li:hover {
+    background: #ccc;
+  }
+  #navigation a:hover {
+    text-decoration: none;
+  }
+  .live-local .live-local-highlight {
+    position: relative;
+    right: 1px;
+    width: auto;
+  }
+  .live-local .live-local-highlight h3 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 700px) {
+  .home-top {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  img {
+    display: block;
+    width: 200px;
+    float: none;
+  }
+  #container {
+    border: none;
+    padding: 0px;
+    width: 95%;
+  }
+  #header #search {
+    position: relative;
+    height: 30px;
+  }
+  .opportunity, .opportunity-descriptions {
+    width: 100%;
+  }
+  .opportunity div, .opportunity-descriptions div {
+    width: 90%;
+  }
+  .home h3 {
+    font-size: 1.9em;
+  }
+  .home span {
+    display: block;
+  }
+  .faith-love h2 {
+    font-size: 2.3em;
+    padding-bottom: 20px;
+  }
+  .faith-love img {
+    opacity: .3;
+  }
+  .partnerships .partner-intro {
+    padding-top: 0 !important;
+  }
+  .partnerships .partner-intro i {
+    display: none;
+  }
+  .partnerships dd {
+    width: auto !important;
+  }
+  .live-local img {
+    width: 150px;
+    top: -12px;
+  }
+}
