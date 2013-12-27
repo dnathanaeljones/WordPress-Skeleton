@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+$purpose_page_query = new WP_Query('pagename=purpose');
+$featured_query 	= new WP_Query(
+							array('post_type' 	=> 'opportunity')
+						);
+ 
+	 
+?>
 
 
 	<div class="content whole-page home">
@@ -11,16 +19,35 @@
 				<h2 class="grow">Grow</h2>	
 			</div>
 		</div>
+		
+		<div class="home-mid">
+			<?php while ( $purpose_page_query->have_posts() ) { 
+				$purpose_page_query->the_post();
+				echo get_the_content(); 		    
+	                 
+			 }; ?>
+			 <a href="<?php get_bloginfo('url'); ?>purpose" class="more">More</a>
+		</div>
 
-		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-
-	    
-                 
-		<?php endwhile; else : ?>
-
-	
-		<?php endif; ?>
-	
+		<div class="home-mid">
+			<?php while ( $featured_query->have_posts() ) { 
+				$featured_query->the_post(); 
+				$title = get_the_title(); 
+				$excerpt = get_the_excerpt(); 
+				
+				if (single_meta('i_desc', 'feature-month', false) !== Date('F')) {
+					break;
+				}
+				?>
+				
+				<h3>
+				Featured: <span><?php echo $title; ?></span>
+				</h3>		    
+				<?php echo $excerpt; ?>
+				<a href="<?php the_permalink(); ?>" class="more">More</a>
+	               
+			<?php }; ?>
+		</div>
 	</div>	
 
 <?php get_footer(); ?>
