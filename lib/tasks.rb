@@ -4,7 +4,7 @@ namespace :shared do
 	end
 	task :make_symlinks do
 		run "if [ ! -h #{release_path}/shared ]; then ln -s #{shared_path}/files/ #{release_path}/shared; fi"
-		run "for p in `find -L #{release_path} -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; sudo mkdir -p #{release_path}/$t; sudo chown fpcnorthshore #{release_path}/$t; done"
+		run "for p in `find -L #{release_path} -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; mkdir -p #{release_path}/$t; chown fpcnorthshore #{release_path}/$t; done"
 	end
 end
 
@@ -62,7 +62,7 @@ namespace :db do
 			puts "Memcached flushed"
 			# Now to copy files
 			find_servers( :roles => :web ).each do |server|
-				system "rsync -avz --delete #{production_deploy_to}/shared/files/ #{server}:#{shared_path}/files/"
+				system "rsync -avz --verbose --delete #{production_deploy_to}/shared/files/ #{user}@#{server}:#{shared_path}/files/"
 			end
 		end
 	end
