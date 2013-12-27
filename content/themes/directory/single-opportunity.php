@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
 
-<?php while(have_posts()) : the_post(); ?>
+<?php while(have_posts()) : the_post(); 
+	$id = get_the_id(); 
+?>
 
 	<div class="content">
 
 	               
-	    <div class="clear">
+	    <div class="clear opportunity-wrap">
 	        <div class="opportunity">
-	            <h3><?php the_title();?></h3>
+	            <h3><?php the_title();?><?php echo partner_type_display($id) ?> </h3>
 	            <div class="org">
 	                <div class="contact">
 	                    
@@ -74,7 +76,13 @@
 	        </div><!-- opportunity desc -->
 	    </div><!-- clear -->
 
+	
+		<div class="as-footer">
+			<?php include 'partners.php' ?>	
+		</div>
+	
 	</div>
+	
 
 <?php endwhile; ?>
 

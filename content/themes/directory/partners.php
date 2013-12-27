@@ -20,7 +20,7 @@ Template Name: Partners
 			Full Gospel Partner
 		</dt>
 		<dd>
-			An organization with an explicit committment to the Gospel of Jesus Christ written into its mission statment
+			An organization with an explicit commitment to the Gospel of Jesus Christ written into its mission statement
 		</dd>
 	</div>
 	<div class="purpose-partner clear">

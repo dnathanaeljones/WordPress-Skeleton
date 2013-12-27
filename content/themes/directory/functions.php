@@ -83,5 +83,43 @@ if ( function_exists('register_sidebar') )
     function show_img($img_name) {
         echo bloginfo('template_directory').'/images/'.$img_name.'.png';
     }
+
+    function partner_type_display($partner_id, $size) {
+        if (!$size) {
+            $size = 'small';
+        }
+
+        $sizes = array(
+            'small'     => '.4em', 
+            'large'     => '.7em'
+        );
+
+        $css_slug   = partner_type($partner_id, false);
+        $title      = partner_type($partner_id, true); 
+        $size_txt   = $sizes[$size];
+
+        return "<i style='font-size: ".$size_txt."; vertical-align: top;' class='icon-".$css_slug."' title='".$title."'></i>";
+    }
+
+    function partner_type($partner_id, $is_title) {
+        $value = '';
+        $meta_array = get_post_meta($partner_id, 'i_desc', true);
+        
+        foreach($meta_array as $om){ 
+            $value = $om['partnership-type'];
+        }
+
+        if ($is_title) {
+            return $value;
+        }
+
+        if ($value == "Full Gospel Partner") {
+            return 'play-circle';
+        } else {
+            return 'cogs';
+        }; 
+        
+
+    }
         
 ?>

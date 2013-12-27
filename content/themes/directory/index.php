@@ -34,6 +34,7 @@ $featured_query 	= new WP_Query(
 				$featured_query->the_post(); 
 				$title = get_the_title(); 
 				$excerpt = get_the_excerpt(); 
+				$id = get_the_id(); 
 				
 				if (single_meta('i_desc', 'feature-month', false) !== Date('F')) {
 					break;
@@ -41,7 +42,7 @@ $featured_query 	= new WP_Query(
 				?>
 				
 				<h3>
-				Featured: <span><?php echo $title; ?></span>
+				Featured: <span><?php echo $title.partner_type_display($id); ?></span>
 				</h3>		    
 				<?php echo $excerpt; ?>
 				<a href="<?php the_permalink(); ?>" class="more">More</a>

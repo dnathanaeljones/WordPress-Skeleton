@@ -22,7 +22,7 @@ get_header(); ?>
 ?>
         
         <a href="<?php the_permalink(); ?>">
-        	<?php the_title(); ?>
+        	<?php the_title(); ?> <?php echo partner_type_display($id, 'large') ?>
         </a>
 
 <?php        
