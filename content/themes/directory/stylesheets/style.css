@@ -374,6 +374,9 @@ a.more:hover {
   }
 }
 @media (max-width: 800px) {
+  #navigation {
+    font-size: 1.5em;
+  }
   #navigation ul {
     display: block;
   }
