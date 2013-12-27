@@ -112,7 +112,6 @@ a.more:hover {
 .content {
   margin-top: 20px;
   margin-left: 5px;
-  margin-bottom: 50px;
 }
 .content img {
   padding: 15px 20px;
@@ -210,6 +209,7 @@ a.more:hover {
 .panel p {
   line-height: 1.3em;
   text-align: justify;
+  font-size: 1.1em;
 }
 .panel .green {
   color: green;
@@ -245,7 +245,6 @@ a.more:hover {
   z-index: 11;
   margin-left: 15px;
   width: 8	0%;
-  font-size: 1.1em;
 }
 .mission-content p {
   margin-left: 0;
@@ -298,9 +297,6 @@ a.more:hover {
   vertical-align: top;
   margin: 30px 10px 0 0;
   font-size: 3.5em;
-}
-.partnerships p {
-  font-size: 1.1em;
 }
 .partnerships dd, .partnerships dt {
   font-size: 1.1em;
