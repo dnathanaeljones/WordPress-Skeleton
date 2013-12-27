@@ -25,7 +25,10 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 
-	<?php wp_head(); ?>
+	<?php wp_head(); 
+		global $post; 
+		$slug = $post->post_name; 
+	?>
 
 </head>
 <body>
@@ -50,9 +53,9 @@
 	</div>
 	<div id="navigation">
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="<?php get_bloginfo('url'); ?>purpose">Purpose</a></li>
-			<li><a href="<?php get_bloginfo('url'); ?>opportunities">Opportunities</a></li>
+			<li class="<?php active_class($slug, 'home'); ?>"><a href="/">Home</a></li>
+			<li class="<?php active_class($slug, 'purpose'); ?>"><a href="<?php get_bloginfo('url'); ?>purpose">Purpose</a></li>
+			<li class="<?php active_class($slug, 'opportunities'); ?>"><a href="<?php get_bloginfo('url'); ?>opportunities">Opportunities</a></li>
 			<li><a href="http://fpcnorthshore.com" target="_blank">FPC Main Website</a></li>
 		</ul>
 	</div>

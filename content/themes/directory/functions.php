@@ -121,5 +121,10 @@ if ( function_exists('register_sidebar') )
         
 
     }
+
+    function active_class($slug, $context) {
+        $c_name = ($slug==$context)? "active" : "inactive";
+        echo $c_name;
+    }
         
 ?>
